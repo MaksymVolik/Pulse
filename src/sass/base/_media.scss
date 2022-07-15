@@ -24,7 +24,13 @@
         &__descr {
             font-size: 13px;
         }
-    }  
+    }
+    .title {
+        &_left {
+            font-size: 30px;
+            line-height: 48px;
+        }
+    }
 }
 
 @media ( max-width: 768px ) {
@@ -62,12 +68,25 @@
             margin-top: 35px;
         }
     }
+    .title {
+        &_left {
+            font-size: 22px;
+            line-height: 36px;
+        }
+    }
+    .consultation {
+        &__descr {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
 }
 
 @media ( max-width: 576px ) {
     .header {
         align-items: flex-start;
         &>a {
+            margin-top: 10px;
             width: 120px;
         }
         &__official {
@@ -77,11 +96,11 @@
             }
         }
         &__phone {
-            font-size: 12px;
+            font-size: 13px;
         }
     }
     .promo {
-        padding: 20px 0 40px 0;
+        padding: 10px 0 40px 0;
         &__wrapper {
             margin-top: 40px;
         }
@@ -118,12 +137,41 @@
             width: 240px;
             height: 40px;
             font-size: 14px;
+        }    
+        &_submit {
+            width: 100%;
+            height: 46px;
+            font-size: 16px;
         }
     }
     .advantage {
         padding: 30px 0;
         &__wrapper {
             margin-top: 0px;
+        }
+    }
+    .title {
+        font-size: 16px;
+        line-height: 16px;
+        &_left {
+            font-size: 11px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+    .consultation {
+        min-height: 400px;
+        padding: 25px 0;
+        &__descr {
+            font-size: 10px;
+            line-height: 16px;
+            text-align: center;
+        }
+    }
+    .feed-form {
+        width: 100%;
+        input {
+            height: 46px;
         }
     }
 }
