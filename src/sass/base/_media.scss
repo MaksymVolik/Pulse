@@ -1,3 +1,13 @@
+// @media ( max-width: 1200px ) {
+//     .carousel {
+//         .prev {
+//             left: 3px;
+//         }
+//         .next {
+//             right: 3px;
+//         }
+//     }
+// }
 @media ( max-width: 992px ) {
     .container {
         padding: 0 25px;
@@ -31,9 +41,16 @@
             line-height: 48px;
         }
     }
-}
-
-@media ( max-width: 768px ) {
+    .carousel {
+        .tns-outer {
+            width: 100%;
+        }
+        .arrow_hidden {
+            display: none;
+        }
+    }   
+} 
+@media ( max-width: 767px ) {
     .header {
         flex-wrap: wrap;
         &>a {
