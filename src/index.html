@@ -7,11 +7,13 @@
     <title>Pulse</title>
     <!-- <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon"> -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"/> -->
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -51,7 +53,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="advantage">
         <div class="container">
@@ -70,13 +72,14 @@
                 <div class="advantage__block">
                     <img src="icons/shoe.png" alt="shoes">
                     <div class="advantage__title">Вчимо бігати</div>
-                    <div class="advantage__descr">Допомагаємо з навчанням правильній техніці бігу! Дружимо з найбільшою школою бігу в Україні – I LOVE RUNNING.</div>
+                    <div class="advantage__descr">Допомагаємо з навчанням правильній техніці бігу! Дружимо з найбільшою школою бігу в Україні – 
+                        <a href="#">I LOVE RUNNING.</a></div>
                 </div>
-
             </div>
         </div>
     </section>
-    <div class="consultation">
+
+    <section class="consultation">
         <div class="container">
             <h2 class="title title_left">Отримайте безкоштовну консультацію<br> щодо підбору пульсометра</h2>
             <div class="consultation__descr">Просто заповніть форму заявки<br> і ми передзвонимо вам протягом 10 хвилин</div>
@@ -87,7 +90,24 @@
                 <button class="button button_submit">замовити КОНСУЛЬТАЦІЮ</button>
             </form>
         </div>
-    </div>
-    
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div><img src="img/slide_1.jpg" alt="slide"></div>
+                <div><img src="img/slide_2.jpg" alt="slide"></div>
+                <div><img src="img/slide_3.jpg" alt="slide"></div>
+            </div>
+            <button type="button" class="prev"><img src="icons/left.svg" alt="arrow" /></button>
+            <button type="button" class="next"><img src="icons/right.svg" alt="arrow" /></button>
+        </div>
+    </section>
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 }
 
 .container {
+	position: relative; //для карусели tiny-slider
 	max-width: 950px;
 	margin: 0 auto;
 }
@@ -16,5 +17,6 @@
 @import 'blocks/advantage';
 @import 'blocks/consultation';
 @import 'blocks/forms';
+@import 'blocks/carousel';
 
 @import 'base/media';
