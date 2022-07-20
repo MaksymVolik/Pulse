@@ -9,4 +9,17 @@
         line-height: 30px;
         color: #FFFFFF;
     }
+    .feed-form {
+        .error {
+            border: 2px solid red;
+        }
+        label.error {
+            margin-top: -15px;
+            border: none;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 10px;
+        }
+    }
 }
