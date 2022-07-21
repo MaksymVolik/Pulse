@@ -60,7 +60,7 @@ $(document).ready(function(){
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
 
-    //model
+    //modal
     $('[data-modal=consultation]').on('click', function() {
       	$('.overlay, #consultation').fadeIn('slow');
     });
@@ -76,6 +76,7 @@ $(document).ready(function(){
       	});
     });
 
+	// validation form
 	function validateForm(form) {
 		$(form).validate({
 			rules: {
@@ -108,4 +109,46 @@ $(document).ready(function(){
 	validateForm('#consultation-form');
 	validateForm('#consultation form');
 	validateForm('#order form');
+
+	// added mask 
+	$('[name=phone]').mask("+38 (999) 999-99-99");
+
+	// Sent form to e-mail
+	$('form').submit(function(e) {
+		e.preventDefault();
+
+		if (!$(this).valid()) {
+			return;
+		}
+
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn();
+			$('form').trigger('reset');
+		});
+		return false;
+	});
+
+	// page up button (show/hiden)
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1200) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
+	});
+
+	new WOW().init();
+
+	// ****Smooth Scroll****
+	// $("a[href^='#']").click(function() {
+	// 	const _href = $(this).attr("href");
+	// 	$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+	// 	return false;
+	// });
 });

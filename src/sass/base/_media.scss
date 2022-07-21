@@ -295,6 +295,9 @@
     }
     .modal {
         min-height: auto;
+        &_small {
+            min-height: 143px;
+        }
     }
 }
 
@@ -314,7 +317,9 @@
         &__subheader {
             font-size: 12px;
         }
-
+        &_small {
+            min-height: 85px;
+        }
     }
 }
 
@@ -353,6 +358,9 @@
                 height: 38px;
                 font-size: 16px;
             }
+        }
+        &_small {
+            min-height: 85px;
         }
     }
 }

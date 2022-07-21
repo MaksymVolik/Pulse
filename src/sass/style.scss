@@ -1,6 +1,11 @@
+@import 'base/variables';
+@import 'base/animations';
 * {
 	font-family: 'Museo Sans Cyrl', sans-serif;
 }
+// :root {
+// 	scroll-behavior: auto;
+// }
 
 .container {
 	position: relative; //для карусели tiny-slider
@@ -8,7 +13,7 @@
 	margin: 0 auto;
 }
 	
-@import 'base/variables';
+
 
 @import 'blocks/promo';
 @import 'blocks/header';
@@ -22,4 +27,5 @@
 @import 'blocks/feedback';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/scrollup';
 @import 'base/media';

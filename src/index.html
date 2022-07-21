@@ -8,12 +8,13 @@
     <!-- <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon"> -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- <link rel="stylesheet" href="css/slick.css"/> -->
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -65,7 +66,7 @@
                     <div class="advantage__descr">Наші співробітники завжди готові поділитися своїм досвідом, оскільки самі бігають напівмарафони, перепливли Босфор, готуються до змагань з тріатлону!</div>
                 </div>
                 <div class="advantage__block">
-                    <img src="icons/heart.png" alt="heart">
+                    <img src="icons/heart.png" alt="heart" class="advantage_animated">
                     <div class="advantage__title">Дбаємо про здоров'я</div>
                     <div class="advantage__descr">Ми працюємо для того, щоб Ваші заняття спортом йшли на користь Вашому здоров'ю та були на радість Вам та Вашим близьким!</div>
                 </div>
@@ -85,7 +86,7 @@
             <div class="consultation__descr">Просто заповніть форму заявки<br> і ми передзвонимо вам протягом 10 хвилин</div>
             <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" placeholder="Ваше ім'я" type="text">
-                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">замовити КОНСУЛЬТАЦІЮ</button>
             </form>
@@ -349,7 +350,7 @@
     <section class="feedback">
         <div class="container">
             <h2 class="title">відгуки клієнтів</h2>
-            <div class="feedback-customer">
+            <div class="feedback-customer animate__animated animate__fadeInUpBig wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/feed_1.png" alt="client photo" class="feedback-customer__img">
                 <div class="feedback-customer__info sm">
                     <div class="feedback-customer__name">Ірина Іванченко </div>
@@ -364,7 +365,7 @@
                     Дякую, RunSmart!</p>
                 </div>
             </div>
-            <div class="feedback-customer">
+            <div class="feedback-customer animate__animated animate__fadeInUpBig wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/feed_2.png" alt="client photo" class="feedback-customer__img">
                 <div class="feedback-customer__info sm">
                     <div class="feedback-customer__name">Іван Коваленко </div>
@@ -378,7 +379,7 @@
                         З ними підготувався до свого першого півмарафону! Дякую!!!</p>
                 </div>
             </div>
-            <div class="feedback-customer">
+            <div class="feedback-customer animate__animated animate__fadeInUpBig wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/feed_3.png" alt="client photo" class="feedback-customer__img">
                 <div class="feedback-customer__info sm">
                     <div class="feedback-customer__name">Юлія Овчиннікова</div>
@@ -430,7 +431,7 @@
             <div class="modal__subheader">і ми передзвонимо вам протягом 10 хвилин</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" placeholder="Ваше ім'я" type="text">
-                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">замовити КОНСУЛЬТАЦІЮ</button>
             </form>
@@ -441,7 +442,7 @@
             <div class="modal__subheader">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" placeholder="Ваше ім'я" type="text">
-                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">Купити</button>
             </form>
@@ -453,12 +454,18 @@
         </div>
     </div>
 
+    <a href="#up" class="scrollup">
+        <img src="icons/chevron-circle-up-solid.svg" alt="up">
+    </a>
+
     <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <!-- <script src="js/slick.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -36,4 +36,10 @@
             color: #FF0000;
         }
     }
+    &_animated {
+        animation: haertbeat 1.5s ease infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
 }
